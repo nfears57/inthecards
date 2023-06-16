@@ -26,6 +26,7 @@ class SessionsController < ApplicationController
           }
         end
     end
+    # login then logout
 
     def destroy
         session.delete :user_id
@@ -37,6 +38,6 @@ class SessionsController < ApplicationController
 
     private
     def session_params
-        params.permit(:email, :password)
+      params.permit(:email, :password)
     end
 end

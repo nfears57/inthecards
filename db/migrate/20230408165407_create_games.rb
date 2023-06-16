@@ -3,7 +3,7 @@ class CreateGames < ActiveRecord::Migration[7.0]
     create_table :games do |t|
       t.string :game_type
       t.integer :players
-
+      
       t.timestamps
     end
   end

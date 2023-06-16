@@ -5,7 +5,9 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.integer :age
       t.float :balance
       t.string :email
-      t.string :password
+      t.string :password_digest
+      t.string :photo
+      t.string :stats
 
       t.timestamps
     end

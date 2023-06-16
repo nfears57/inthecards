@@ -6,3 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 #  Nicks the best
+
+puts "seeding..."
+user1 = User.create!(name: "nickf", email: "nfears5798@gmail.com", password_digest: "abc123", age: 25, balance: 100)
+
+puts "done seeding!"
